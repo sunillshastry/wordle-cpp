@@ -19,12 +19,15 @@ std::vector<std::string> get_words_vector() {
   std::string path = REL_FILE_PATH + FILE_NAME;
 
   std::ifstream words_file(path);
+
+  // Check if the file itself exists
   if (!words_file) {
     throw CoreException("FileNotFoundException: Provided path and filename is "
                         "incorrect or does not exist",
                         1);
   }
 
+  // Check if the file is opened
   if (!words_file.is_open()) {
     throw CoreException(
         "FileNotOpenException: Program is unable to open provided file", -1);
