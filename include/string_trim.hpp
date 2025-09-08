@@ -3,6 +3,6 @@
 
 #include <string>
 
-std::string string_trim(const std::string &str);
+std::string string_trim(const std::string& str);
 
 #endif
