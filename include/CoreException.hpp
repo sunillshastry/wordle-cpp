@@ -5,11 +5,11 @@
 #include <string>
 
 class CoreException : public std::exception {
-private:
+  private:
   std::string message;
   int code;
 
-public:
+  public:
   CoreException();
   CoreException(const std::string message);
   CoreException(const int code);

@@ -2,22 +2,22 @@
 
 CoreException::CoreException() {
   this->message = "";
-  this->code = 0;
+  this->code    = 0;
 }
 
 CoreException::CoreException(const std::string message) {
   this->message = message;
-  this->code = 0;
+  this->code    = 0;
 }
 
 CoreException::CoreException(const int code) {
   this->message = "";
-  this->code = code;
+  this->code    = code;
 }
 
 CoreException::CoreException(const std::string message, const int code) {
   this->message = message;
-  this->code = code;
+  this->code    = code;
 }
 
 std::string CoreException::get_message() { return this->message; }
