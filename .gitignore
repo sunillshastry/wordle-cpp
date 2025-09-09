@@ -39,3 +39,9 @@
 
 # debug information files
 *.dwo
+
+# Custom build file
+main
+
+# Temporary "build" script shell file to run the code
+run.sh
