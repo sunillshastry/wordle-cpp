@@ -7,6 +7,6 @@
 /**
         Select a random five letter word from the provided 'words' vector
 */
-std::string select_random_word(std::vector<std::string>& words_list);
+std::string select_random_word(const std::vector<std::string>& words_list);
 
 #endif
