@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-std::string select_random_word(std::vector<std::string> words_list) {
+std::string select_random_word(const std::vector<std::string>& words_list) {
   // Set the randomness based on time (seconds)
   srand(time(NULL));
 
